@@ -1,0 +1,1 @@
+"use strict";var TOKEN_LIST="https://tokens.swipe.org/";function getAssets(){return Promise.all([$.get(TOKEN_LIST)])}function urlCheck(n){return new Promise(function(t){return $.get(n).then(function(){return t(!0)}).catch(function(){return t(0)})})}
